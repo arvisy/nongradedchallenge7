@@ -22,16 +22,18 @@ if (nilai > 70 && absen < 5) {
 }
 
 // soal 3 
-let detik = 60;
+let detik = 90;
 let menit = 0;
 
 function formattingTime() {
     if (detik >= 60) {
-        detik = detik % 60;
         menit = detik / 60;
+        detik = detik % 60;
     }
     console.log(menit + ":" + detik);
 }
+
+console.log(formattingTime());
 
 // soal 4
 let value = 0;
